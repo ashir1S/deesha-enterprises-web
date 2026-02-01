@@ -11,13 +11,15 @@
     
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        /* Deep Premium Hero Background */
         .hero-bg {
-            background-image: linear-gradient(rgba(10, 15, 30, 0.85), rgba(10, 15, 30, 0.85)), 
+            background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), 
                               url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
         }
+        /* Subtle pattern for sections */
         .industrial-pattern {
             background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
         }
@@ -28,25 +30,25 @@
     </style>
 </head>
 
-<body class="bg-[#fcfcfc] text-slate-900 overflow-x-hidden selection:bg-blue-100">
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden selection:bg-blue-200 selection:text-blue-950">
 
 <nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100 py-5 px-10 transition-all duration-500" x-data="{ atTop: true }" @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)" :class="!atTop ? 'py-3 shadow-md' : ''">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center gap-3">
-            <div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-blue-900/20">DE</div>
+            <div class="w-12 h-12 bg-blue-950 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-blue-900/20">DE</div>
             <div class="flex flex-col leading-none">
                 <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">DEESHA</span>
-                <span class="text-[10px] font-bold tracking-[0.4em] text-blue-600">ENTERPRISES</span>
+                <span class="text-[10px] font-bold tracking-[0.4em] text-blue-600 uppercase">Enterprises</span>
             </div>
         </div>
         <div class="hidden md:flex items-center gap-12 font-bold text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            <a href="#home" class="hover:text-blue-600 transition-colors">Strategic Nexus</a>
+            <a href="#home" class="hover:text-blue-600 transition-colors">Nexus</a>
             <a href="#about" class="hover:text-blue-600 transition-colors">Operations</a>
             <a href="#products" class="hover:text-blue-600 transition-colors">Divisions</a>
             <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
         </div>
-        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all active:scale-95 shadow-xl shadow-blue-600/20">
-            Bulk Portal
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-600/20">
+            Bulk Inquiries
         </a>
     </div>
 </nav>
@@ -54,24 +56,16 @@
 <section id="home" class="relative min-h-screen flex items-center hero-bg text-white pt-24 px-10">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center z-10">
         <div class="animate__animated animate__fadeInLeft">
-            <div class="inline-flex items-center gap-3 px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-full mb-8">
-                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-300">Authorized Fulfillment: Bihar State</span>
-            </div>
-            <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-[0.9] mb-10">
-                Empowering Retail <br> Through <span class="text-blue-400 italic">Seamless</span> Logistics.
+            <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-[0.95] mb-10">
+                Architecting <br> <span class="text-blue-400 italic">Bihar's</span> Industrial <br> Supply Chain.
             </h1>
             <p class="text-xl text-slate-300 mb-12 max-w-xl leading-relaxed font-light">
-                Architecting Bihar's supply chain as the primary regional distribution nexus for institutional stationery and high-grade paper engineering.
+                Operating as the primary regional distribution nexus for institutional stationery and high-grade paper engineering. We drive industrial-scale logistics for the modern marketplace across the entire state.
             </p>
-            <div class="flex flex-wrap gap-8 items-center">
-                <a href="#products" class="bg-white text-blue-900 px-12 py-5 rounded-3xl font-black text-xl hover:bg-slate-50 transition shadow-2xl">
-                    View Portfolio
+            <div>
+                <a href="#products" class="bg-blue-600 text-white px-12 py-5 rounded-3xl font-black text-xl hover:shadow-2xl hover:shadow-blue-600/20 transition">
+                    View Enterprise Divisions
                 </a>
-                <div class="flex flex-col border-l-2 border-white/20 pl-8">
-                    <span class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-2">Verified Hub Status</span>
-                    <span class="text-2xl font-bold font-mono">GST 10AOXPK3126N1ZO</span>
-                </div>
             </div>
         </div>
     </div>
@@ -100,20 +94,20 @@
                 </div>
             </div>
 
-            <div class="bg-slate-950 rounded-[4rem] p-12 text-white shadow-3xl sticky top-32 animate__animated animate__fadeInRight">
-                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-16 border-b border-white/10 pb-4">Corporate Fact Sheet</h4>
-                <div class="space-y-10">
+            <div class="bg-slate-950 rounded-[4rem] p-12 text-white shadow-3xl sticky top-32 animate__animated animate__fadeInRight border border-slate-900/50">
+                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-16 border-b border-blue-900/50 pb-4">Corporate Fact Sheet</h4>
+                <div class="space-y-12">
                     <div>
-                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Proprietor</div>
-                        <div class="text-2xl font-bold italic">Sanjay Kumar</div>
+                        <div class="text-blue-500/60 text-[10px] font-black uppercase tracking-widest mb-2">Proprietor</div>
+                        <div class="text-3xl font-bold italic">Sanjay Kumar</div>
                     </div>
                     <div>
-                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Registration Status</div>
-                        <div class="text-xl font-bold italic text-blue-300">Since July 2017</div>
+                        <div class="text-blue-500/60 text-[10px] font-black uppercase tracking-widest mb-2">Registration Status</div>
+                        <div class="text-2xl font-bold italic text-blue-400">Since July 2017</div>
                     </div>
                     <div>
-                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Business Nature</div>
-                        <div class="text-xl font-bold">Wholesale / Distributor</div>
+                        <div class="text-blue-500/60 text-[10px] font-black uppercase tracking-widest mb-2">Business Nature</div>
+                        <div class="text-2xl font-bold">Wholesale / Distributor</div>
                     </div>
                 </div>
             </div>
@@ -171,37 +165,45 @@
     </div>
 </section>
 
-<footer id="contact" class="bg-slate-950 text-white pt-40 pb-20 px-10 border-t-8 border-blue-600 relative overflow-hidden">
+<footer id="contact" class="bg-slate-950 text-white pt-40 pb-20 px-10 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
     <div class="absolute -top-24 -right-24 w-[30rem] h-[30rem] bg-blue-600/10 blur-[150px] rounded-full"></div>
+    
     <div class="max-w-7xl mx-auto relative z-10">
         <div class="grid lg:grid-cols-2 gap-32 mb-40 items-center">
             <div>
-                <h2 class="text-7xl font-black tracking-tighter mb-12 leading-[0.9]">Connect <br> With The <span class="text-blue-500 italic">State Hub</span>.</h2>
+                <h2 class="text-7xl font-black tracking-tighter mb-12 leading-[0.9]">Partner For <br> <span class="text-blue-500 italic">Statewide</span> Scale.</h2>
+                <h3 class="text-xl text-slate-400 font-medium max-w-md leading-relaxed mb-12">
+                    Our Patna distribution center is ready to integrate with your supply chain. Reach out for high-volume fulfillment.
+                </h3>
                 <div class="flex flex-col gap-8">
-                    <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="text-2xl font-bold hover:text-blue-400 transition flex items-center gap-4 group">
-                        <span class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition">✉</span>
-                        info.deeshaenterprises.patna@gmail.com
+                    <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="text-3xl font-bold hover:text-blue-400 transition flex items-center gap-6 group">
+                        <span class="w-14 h-14 bg-blue-900/50 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition text-2xl">✉</span>
+                        <span class="underline underline-offset-8 decoration-blue-900/50 group-hover:decoration-blue-500 transition">info.deeshaenterprises.patna@gmail.com</span>
                     </a>
-                    <div class="text-2xl font-bold flex items-center gap-4 italic text-blue-400">
-                        <span class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">☏</span>
+                    <div class="text-3xl font-bold flex items-center gap-6 text-blue-400">
+                        <span class="w-14 h-14 bg-blue-900/50 rounded-full flex items-center justify-center text-white text-2xl">☏</span>
                         +91 9835198503
                     </div>
                 </div>
             </div>
             
-            <div class="p-12 border border-white/10 rounded-[4rem] bg-white/5 backdrop-blur-md">
-                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 underline underline-offset-8 decoration-blue-500">Regional Headquarters</h4>
-                <p class="text-4xl font-light mb-12 leading-snug">Near Rajiv Nagar Nala Main Road, <br> Patna, Bihar – 800024</p>
-                <div class="flex flex-wrap items-center justify-between">
-                    <span class="text-xs font-bold tracking-widest text-slate-400">GST: 10AOXPK3126N1ZO</span>
-                    <span class="px-6 py-2 bg-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest italic animate-pulse">State-Wide Active Hub</span>
+            <div class="p-12 border border-blue-900/30 rounded-[4rem] bg-slate-900/50 backdrop-blur-md shadow-2xl">
+                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 underline underline-offset-8 decoration-blue-500/50">Regional Headquarters</h4>
+                <p class="text-4xl font-light mb-12 leading-snug text-white">Near Rajiv Nagar Nala Main Road, <br> <span class="font-bold text-blue-100">Patna, Bihar – 800024</span></p>
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                        <div class="text-[10px] font-black uppercase tracking-widest text-blue-500/60 mb-1">GST Identification</div>
+                        <div class="text-lg font-mono font-bold text-white">10AOXPK3126N1ZO</div>
+                    </div>
+                    <span class="px-6 py-2 bg-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest italic shadow-lg shadow-blue-600/20">Active State Hub</span>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-white/10 opacity-30 text-[10px] font-black tracking-[0.5em] uppercase italic">
+        <div class="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-blue-900/30 opacity-40 text-[10px] font-black tracking-[0.5em] uppercase italic">
             <p>© 2026 DEESHA ENTERPRISES</p>
-            <p class="mt-4 md:mt-0 italic underline underline-offset-8 decoration-blue-500">Logistics & Fulfillment Division</p>
+            <p class="mt-4 md:mt-0">Institutional Logistics & Fulfillment Division</p>
         </div>
     </div>
 </footer>
