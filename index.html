@@ -3,105 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deesha Enterprises | Institutional Supply Chain & Logistics Hub</title>
+    <title>Deesha Enterprises | Institutional Supply Chain & Paper Engineering</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .hero-overlay {
+        .hero-bg {
             background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-                              url('https://images.unsplash.com/photo-1586075010633-247fe4965809?q=80&w=2070&auto=format&fit=crop');
+                              url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .paper-bg {
+            background-image: url('https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
     </style>
 </head>
 
-<body class="bg-[#fcfcfc] text-slate-800 selection:bg-blue-100">
+<body class="bg-[#fcfcfc] text-slate-800 selection:bg-blue-100 overflow-x-hidden">
 
-<nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100 py-4 px-6 transition-all duration-300" x-data="{ atTop: true }" @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center text-white font-black text-xl">DE</div>
-            <span class="text-xl font-bold tracking-tight text-slate-900 uppercase">Deesha <span class="text-blue-600 font-medium tracking-normal">Enterprises</span></span>
-        </div>
-        <div class="hidden md:flex space-x-10 font-semibold text-slate-500 uppercase text-xs tracking-widest">
-            <a href="#home" class="hover:text-blue-600 transition-colors">Core</a>
-            <a href="#about" class="hover:text-blue-600 transition-colors">Operations</a>
-            <a href="#products" class="hover:text-blue-600 transition-colors">Portfolio</a>
-            <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-        </div>
-        <a href="#contact" class="bg-blue-600 text-white px-8 py-2.5 rounded-full font-bold hover:bg-blue-700 transition-all active:scale-95 shadow-lg shadow-blue-200">
-            B2B Inquiry
-        </a>
+<nav class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100 py-4 px-8 flex justify-between items-center transition-all duration-300" x-data="{ atTop: true }" @scroll.window="atTop = (window.pageYOffset > 50 ? false : true)">
+    <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center text-white font-black text-xl">DE</div>
+        <span class="text-xl font-extrabold tracking-tighter text-slate-900">DEESHA <span class="text-blue-600 font-medium tracking-normal">ENTERPRISES</span></span>
+    </div>
+    <div class="hidden md:flex items-center gap-10 font-bold text-xs uppercase tracking-[0.2em] text-slate-500">
+        <a href="#home" class="hover:text-blue-600 transition-colors">Nexus</a>
+        <a href="#about" class="hover:text-blue-600 transition-colors">Operations</a>
+        <a href="#products" class="hover:text-blue-600 transition-colors">Portfolio</a>
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">State-Wide Inquiry</a>
     </div>
 </nav>
 
-<section id="home" class="relative min-h-screen flex items-center hero-overlay text-white pt-20 px-6">
+<section id="home" class="relative min-h-screen flex items-center hero-bg text-white pt-20 px-8">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center z-10">
         <div class="animate__animated animate__fadeInLeft">
-            <div class="inline-block px-4 py-1 bg-blue-600 rounded-full font-bold text-[10px] uppercase tracking-[0.2em] mb-8">
-                Authorized State-Wide Distribution Nexus
+            <div class="inline-block px-4 py-1 bg-blue-600 rounded-full font-bold text-[10px] uppercase tracking-[0.3em] mb-8">
+                Regional Distribution Hub | Patna, Bihar
             </div>
             <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-[0.9] mb-10">
-                Architecting <br> <span class="text-blue-400">Bihar's Supply</span> <br> Chain.
+                Empowering <br> <span class="text-blue-400">Retail Via</span> <br> Seamless Logistics.
             </h1>
             <p class="text-xl text-slate-300 mb-10 max-w-xl leading-relaxed font-light">
-                Operating as the primary logistics backbone for wholesale stationery and paper products. We drive high-volume fulfillment for institutional retail ecosystems across the entire Bihar region.
+                Beyond being a supplier, we are the backbone of stationery distribution in Patna. We deliver reliability, scale, and digital-first wholesale solutions for the modern marketplace across **all of Bihar**.
             </p>
             <div class="flex flex-wrap gap-8 items-center">
                 <a href="#products" class="bg-white text-blue-900 px-12 py-5 rounded-2xl font-black text-xl hover:bg-slate-100 transition shadow-2xl">
                     Explore Inventory
                 </a>
                 <div class="flex flex-col border-l-2 border-white/20 pl-8">
-                    <span class="text-blue-400 font-black text-xs uppercase tracking-widest">Verified Entity</span>
-                    <span class="text-2xl font-bold font-mono">10AOXPK3126N1ZO</span>
+                    <span class="text-blue-400 font-black text-xs uppercase tracking-widest leading-tight">7+ Years of Trust</span>
+                    <span class="text-2xl font-bold">State-Wide Reach</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="about" class="py-32 px-6 bg-white">
+<section id="about" class="py-32 px-8 bg-white">
     <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-3 gap-16 items-start">
-            <div class="lg:col-span-2">
-                <h2 class="text-sm font-black text-blue-600 uppercase tracking-widest mb-4">Industrial Logistics</h2>
-                <h3 class="text-5xl font-extrabold text-slate-900 mb-8 leading-tight">Driving Enterprise Distribution.</h3>
-                <p class="text-lg text-slate-500 leading-relaxed mb-12">
-                    Established in 2017 under the leadership of Sanjay Kumar, Deesha Enterprises transitioned from a traditional trader to a regional distribution powerhouse. We leverage optimized supply chain frameworks to serve retailers and institutions with guaranteed stock availability.
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="paper-bg h-[600px] rounded-[4rem] shadow-2xl relative overflow-hidden group">
+                <div class="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-all duration-700"></div>
+                <div class="absolute bottom-10 left-10 bg-white p-8 rounded-3xl shadow-2xl">
+                    <div class="text-blue-600 font-black text-4xl mb-1 italic">99%</div>
+                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-tight text-center">Supply <br> Accuracy</div>
+                </div>
+            </div>
+            <div class="space-y-10">
+                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.4em] mb-4">Core Operations</h2>
+                <h3 class="text-5xl font-extrabold text-slate-900 leading-tight">Driving Transformation in <br> Wholesale Distribution.</h3>
+                <p class="text-lg text-slate-500 leading-relaxed">
+                    Established in 2017, Deesha Enterprises transitioned from a local shop to a regional distribution powerhouse. We leverage high-volume inventory management to ensure our partners never face a stock-out, covering thousands of retail units state-wide.
                 </p>
-                
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="p-8 border border-slate-100 rounded-[2rem] bg-slate-50 hover:border-blue-200 transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-4">✓</div>
+                    <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 hover:border-blue-200 transition">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-4">📍</div>
+                        <h4 class="font-bold mb-2">Strategic Hub</h4>
+                        <p class="text-sm text-slate-400">Headquartered in Patna, perfectly positioned to serve the entire Bihar region.</p>
+                    </div>
+                    <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 hover:border-blue-200 transition">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-4">✓</div>
                         <h4 class="font-bold mb-2">Compliance First</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Fully GST-compliant entity ensuring transparent and optimized billing for institutional clients.</p>
-                    </div>
-                    <div class="p-8 border border-slate-100 rounded-[2rem] bg-slate-50 hover:border-blue-200 transition">
-                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-4">🚚</div>
-                        <h4 class="font-bold mb-2">Patna Distribution HQ</h4>
-                        <p class="text-sm text-slate-400 leading-relaxed">Strategically located to manage state-wide logistics and high-volume direct fulfillment.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-slate-950 rounded-[3rem] p-12 text-white shadow-3xl sticky top-32">
-                <h4 class="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-12">Official Fact Sheet</h4>
-                <div class="space-y-8">
-                    <div class="flex flex-col border-b border-white/10 pb-4">
-                        <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Proprietor</span>
-                        <span class="text-xl font-bold">Sanjay Kumar</span>
-                    </div>
-                    <div class="flex flex-col border-b border-white/10 pb-4">
-                        <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Business Nature</span>
-                        <span class="text-xl font-bold">Trader / Wholesaler</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-white/40 text-[10px] font-bold uppercase tracking-widest mb-2">Market Presence</span>
-                        <span class="text-xl font-bold italic">Established 2017</span>
+                        <p class="text-sm text-slate-400">Fully GST-compliant (10AOXPK3126N1ZO) with authorized business frameworks.</p>
                     </div>
                 </div>
             </div>
@@ -109,70 +97,93 @@
     </div>
 </section>
 
-<section id="products" class="py-32 px-6 bg-slate-50">
+<section id="products" class="py-32 px-8 bg-slate-50">
     <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-24">
-            <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-4">Enterprise Portfolio</h2>
-            <h3 class="text-5xl font-black text-slate-900 leading-tight">Our Core Divisions.</h3>
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24">
+            <div class="max-w-xl">
+                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-6">Fulfillment Portfolios</h2>
+                <h3 class="text-5xl font-black text-slate-900 leading-tight italic">Our Core Specialties.</h3>
+            </div>
+            <div class="hidden md:block pb-4">
+                <div class="h-1.5 w-32 bg-blue-600 rounded-full"></div>
+            </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="group bg-white p-12 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all duration-700">
-                <div class="h-48 w-full bg-cover bg-center rounded-[2.5rem] mb-10 overflow-hidden shadow-inner" style="background-image: url('https://images.unsplash.com/photo-1579847209355-32e675003310?q=80&w=2072&auto=format&fit=crop');"></div>
-                <h4 class="text-3xl font-black mb-6 text-slate-900">Paper Engineering</h4>
-                <p class="text-slate-500 leading-relaxed mb-8">
-                    We architect the mass-scale distribution of **Plain, Coloured, and Premium White Paper Envelopes**. Our hub manages statewide fulfillment for industrial-volume requirements.
-                </p>
-                <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">Institutional Supply Pillar</div>
+            <div class="group bg-white rounded-[3.5rem] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-700 border border-slate-100">
+                <div class="h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579847209355-32e675003310?q=80&w=2072&auto=format&fit=crop');"></div>
+                <div class="p-12">
+                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Paper Engineering</h4>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-8 italic">
+                        Mass-scale distribution of Plain, Coloured, and Premium White Paper Envelopes. Architecting industrial-volume logistics for the entire state's corporate and retail sectors.
+                    </p>
+                    <span class="text-blue-600 font-bold text-xs tracking-[0.2em] uppercase">High-Volume fulfillment</span>
+                </div>
             </div>
 
-            <div class="group bg-white p-12 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all duration-700">
-                <div class="h-48 w-full bg-cover bg-center rounded-[2.5rem] mb-10 overflow-hidden shadow-inner" style="background-image: url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop');"></div>
-                <h4 class="text-3xl font-black mb-6 text-slate-900">Artisan Supplies</h4>
-                <p class="text-slate-500 leading-relaxed mb-8">
-                    Authorized Tier-1 distribution for **Camel Acrylic Colors, Watercolors, and Poster Colours**. Driving bulk supply chains for retail networks and art educational frameworks.
-                </p>
-                <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">Official Brand Distribution</div>
+            <div class="group bg-white rounded-[3.5rem] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-700 border border-slate-100">
+                <div class="h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop');"></div>
+                <div class="p-12">
+                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Artisan Supply Chain</h4>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-8 italic">
+                        Official statewide distribution of Camel Acrylic Colors, Watercolors, and Poster Colours. Stabilizing the creative supply chain for educational and art institutions.
+                    </p>
+                    <span class="text-blue-600 font-bold text-xs tracking-[0.2em] uppercase">Authorized Tier-1 Partner</span>
+                </div>
             </div>
 
-            <div class="group bg-white p-12 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all duration-700">
-                <div class="h-48 w-full bg-cover bg-center rounded-[2.5rem] mb-10 overflow-hidden shadow-inner" style="background-image: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=2048&auto=format&fit=crop');"></div>
-                <h4 class="text-3xl font-black mb-6 text-slate-900 text-slate-900">Retail Logistics</h4>
-                <p class="text-slate-500 leading-relaxed mb-8">
-                    Complete institutional stationery optimization for high-capacity retail and government framework supply. Delivering high-grade paper products with guaranteed logistics timelines.
-                </p>
-                <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">Statewide Fulfillment</div>
+            <div class="group bg-white rounded-[3.5rem] overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-700 border border-slate-100">
+                <div class="h-56 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=2048&auto=format&fit=crop');"></div>
+                <div class="p-12">
+                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Retail Logistics</h4>
+                    <p class="text-slate-500 leading-relaxed text-sm mb-8 italic">
+                        Comprehensive institutional stationery packs and high-grade paper product optimization. Direct fulfillment systems designed for statewide retail responsiveness.
+                    </p>
+                    <span class="text-blue-600 font-bold text-xs tracking-[0.2em] uppercase">Enterprise-Scale Ops</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer id="contact" class="bg-slate-900 text-white pt-40 pb-20 px-8">
+<footer id="contact" class="bg-slate-950 text-white pt-40 pb-20 px-8 border-t-8 border-blue-600 relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-blue-600/10 blur-[100px] rounded-full"></div>
     <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-32 mb-40">
-            <div>
-                <h2 class="text-7xl font-black tracking-tighter mb-10 leading-[0.9]">Connect <br> With The <span class="text-blue-500 italic">Hub</span>.</h2>
-                <div class="space-y-8 flex flex-col">
-                    <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="text-2xl font-bold hover:text-blue-400 transition">info.deeshaenterprises.patna@gmail.com</a>
-                    <span class="text-2xl font-bold">+91 9835198503</span>
-                </div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-16 mb-40">
+            <div class="max-w-2xl">
+                <h2 class="text-7xl font-black tracking-tighter mb-10 leading-none">Let's Grow Your <br> <span class="text-blue-500 italic">Enterprise</span> Hub.</h2>
+                <p class="text-white/40 text-xl font-light italic">Our state-wide warehouse is your primary inventory. Partner for high-volume fulfillment.</p>
             </div>
-            
-            <div class="p-12 border border-white/10 rounded-[4rem] bg-white/5 relative overflow-hidden">
-                <div class="absolute -right-20 -top-20 text-[15rem] opacity-5 select-none font-black leading-none animate__animated animate__pulse animate__infinite">HQ</div>
-                <h4 class="text-blue-400 font-bold uppercase tracking-[0.5em] text-[10px] mb-12">Headquarters Patna</h4>
-                <p class="text-4xl font-light mb-12 leading-snug">Near Rajiv Nagar Nala Main Road, <br> Patna, Bihar – 800024</p>
-                <div class="flex items-center gap-4 text-white/20 text-xs font-bold uppercase tracking-widest">
-                    <span>GST: 10AOXPK3126N1ZO</span>
-                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                    <span>Statewide Active</span>
+            <div class="flex flex-col gap-8 w-full md:w-auto">
+                <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="bg-white text-slate-950 px-12 py-5 rounded-[2.5rem] font-black text-xl hover:scale-105 transition shadow-2xl shadow-blue-500/20 text-center">
+                    info.deeshaenterprises.patna@gmail.com
+                </a>
+                <div class="px-12 py-5 bg-white/5 border border-white/10 rounded-[2.5rem] font-black text-2xl text-center">
+                    +91 9835198503
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-white/5 opacity-40 text-[10px] font-black tracking-[0.5em] uppercase">
-            <p>© 2026 DEESHA ENTERPRISES</p>
-            <p class="mt-4 md:mt-0 italic underline underline-offset-8 decoration-blue-500">Digital Transformation managed by SDE Division</p>
+        <div class="grid md:grid-cols-3 gap-20 pt-20 border-t border-white/5">
+            <div class="space-y-6">
+                <div class="text-2xl font-black tracking-tighter uppercase">DEESHA <span class="text-blue-500 tracking-normal">ENTERPRISES</span></div>
+                <p class="text-white/30 leading-relaxed font-medium italic">
+                    Near Rajiv Nagar Nala Main Road, <br>
+                    Patna, Bihar – 800024
+                </p>
+            </div>
+            <div class="glass p-8 rounded-3xl border border-white/5">
+                <h4 class="font-black mb-8 text-blue-400 uppercase tracking-[0.3em] text-[10px] italic">Verified Business Status</h4>
+                <div class="flex items-center justify-between">
+                    <span class="text-[10px] font-bold tracking-widest text-white/50">GST 10AOXPK3126N1ZO</span>
+                    <span class="text-[10px] font-black uppercase py-1 px-4 bg-blue-600 rounded-full italic">Patna HQ</span>
+                </div>
+            </div>
+            <div class="md:text-right flex flex-col justify-end">
+                <p class="text-white/20 text-xs font-black uppercase tracking-[0.4em] leading-loose italic">
+                    © 2026 DEESHA ENTERPRISES. <br> LOGISTICS & FULFILLMENT DIVISION.
+                </p>
+            </div>
         </div>
     </div>
 </footer>
