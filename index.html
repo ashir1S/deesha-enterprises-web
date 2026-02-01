@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deesha Enterprises | Bihar's Leading Logistics Hub</title>
+    <title>Deesha Enterprises | Bihar's Industrial Supply Chain & Paper Engineering</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .hero-bg {
@@ -17,9 +18,12 @@
             background-position: center;
             background-attachment: fixed;
         }
-        .industrial-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px -15px rgba(30, 58, 138, 0.15);
+        .industrial-pattern {
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+        .enterprise-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -32,17 +36,17 @@
             <div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-blue-900/20">DE</div>
             <div class="flex flex-col leading-none">
                 <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">DEESHA</span>
-                <span class="text-[10px] font-bold tracking-[0.4em] text-blue-600 uppercase">Enterprises</span>
+                <span class="text-[10px] font-bold tracking-[0.4em] text-blue-600">ENTERPRISES</span>
             </div>
         </div>
         <div class="hidden md:flex items-center gap-12 font-bold text-[11px] uppercase tracking-[0.2em] text-slate-500">
-            <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+            <a href="#home" class="hover:text-blue-600 transition-colors">Strategic Nexus</a>
             <a href="#about" class="hover:text-blue-600 transition-colors">Operations</a>
             <a href="#products" class="hover:text-blue-600 transition-colors">Divisions</a>
             <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
         </div>
-        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-600/20">
-            B2B Inquiries
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all active:scale-95 shadow-xl shadow-blue-600/20">
+            Bulk Portal
         </a>
     </div>
 </nav>
@@ -50,44 +54,68 @@
 <section id="home" class="relative min-h-screen flex items-center hero-bg text-white pt-24 px-10">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center z-10">
         <div class="animate__animated animate__fadeInLeft">
-            <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-[0.95] mb-10">
+            <div class="inline-flex items-center gap-3 px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-full mb-8">
+                <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+                <span class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-300">Authorized Fulfillment: Bihar State</span>
+            </div>
+            <h1 class="text-6xl md:text-8xl font-[900] tracking-tighter leading-[0.9] mb-10">
                 Empowering Retail <br> Through <span class="text-blue-400 italic">Seamless</span> Logistics.
             </h1>
-            <p class="text-xl text-slate-300 mb-12 max-w-xl leading-relaxed font-light italic">
-                Architecting Bihar's statewide supply chain for industrial art supplies and high-volume paper engineering.
+            <p class="text-xl text-slate-300 mb-12 max-w-xl leading-relaxed font-light">
+                Architecting Bihar's supply chain as the primary regional distribution nexus for institutional stationery and high-grade paper engineering.
             </p>
             <div class="flex flex-wrap gap-8 items-center">
-                <a href="#products" class="bg-white text-blue-900 px-12 py-5 rounded-3xl font-black text-xl hover:shadow-2xl transition">
-                    Explore Inventory
+                <a href="#products" class="bg-white text-blue-900 px-12 py-5 rounded-3xl font-black text-xl hover:bg-slate-50 transition shadow-2xl">
+                    View Portfolio
                 </a>
-                <div class="flex items-center gap-4 px-6 border-l-2 border-white/20">
-                    <div class="text-4xl font-black text-blue-400">7+</div>
-                    <div class="text-xs font-bold text-slate-400 uppercase tracking-widest leading-tight">Years of Regional <br> Trust</div>
+                <div class="flex flex-col border-l-2 border-white/20 pl-8">
+                    <span class="text-blue-400 font-black text-xs uppercase tracking-[0.2em] mb-2">Verified Hub Status</span>
+                    <span class="text-2xl font-bold font-mono">GST 10AOXPK3126N1ZO</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="about" class="py-40 px-10 bg-white">
+<section id="about" class="py-40 px-10 bg-white industrial-pattern">
     <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-24 items-center">
-            <div class="space-y-10">
-                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-4 underline decoration-blue-100 underline-offset-8">Operations Overview</h2>
-                <h3 class="text-5xl font-extrabold text-slate-900 leading-[1.1]">Scaling Enterprise <br> Distribution Since 2017.</h3>
-                <p class="text-lg text-slate-500 leading-relaxed italic">
-                    Established in 2017, Deesha Enterprises has evolved from a local trader into a statewide distribution hub based in Patna. We manage high-volume logistics for the entire state’s retail sector.
+        <div class="grid lg:grid-cols-3 gap-24 items-start">
+            <div class="lg:col-span-2">
+                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-6 underline decoration-blue-100 underline-offset-8">Fulfillment Infrastructure</h2>
+                <h3 class="text-5xl font-extrabold text-slate-900 mb-10 leading-[1.1]">Scaling Regional <br> Distribution Excellence.</h3>
+                <p class="text-lg text-slate-500 leading-relaxed mb-12">
+                    Established in 2017, Deesha Enterprises transitioned from local trading to a centralized regional distribution powerhouse. Under the leadership of Sanjay Kumar, we bridge the gap between national manufacturers and the Bihar retail ecosystem with statewide supply chain accuracy.
                 </p>
-                <div class="bg-slate-50 p-10 rounded-[3rem] border border-slate-100">
-                    <table class="w-full text-left">
-                        <tr class="border-b border-slate-200"><td class="py-4 text-slate-400 text-xs font-bold uppercase">Proprietor</td><td class="py-4 font-bold">Sanjay Kumar</td></tr>
-                        <tr class="border-b border-slate-200"><td class="py-4 text-slate-400 text-xs font-bold uppercase">Legal Status</td><td class="py-4 font-bold">Proprietorship</td></tr>
-                        <tr><td class="py-4 text-slate-400 text-xs font-bold uppercase">Business Nature</td><td class="py-4 font-bold">Wholesaler / Distributor</td></tr>
-                    </table>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="p-10 bg-slate-50 border border-slate-100 rounded-[3rem] group hover:border-blue-200 transition">
+                        <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-900 text-3xl mb-6 group-hover:rotate-6 transition">🚚</div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900">Patna Regional Hub</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Strategically headquartered to manage state-wide inventory flow and direct fulfillment.</p>
+                    </div>
+                    <div class="p-10 bg-slate-50 border border-slate-100 rounded-[3rem] group hover:border-blue-200 transition">
+                        <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-700 text-3xl mb-6 group-hover:rotate-6 transition">✓</div>
+                        <h4 class="text-xl font-bold mb-3 text-slate-900">7+ Years of Trust</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">A legacy built on reliability, transparency, and verified business practices since 2017.</p>
+                    </div>
                 </div>
             </div>
-            <div class="relative hidden lg:block">
-                <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2070&auto=format&fit=crop" class="rounded-[4rem] shadow-2xl" alt="Paper Quality">
+
+            <div class="bg-slate-950 rounded-[4rem] p-12 text-white shadow-3xl sticky top-32 animate__animated animate__fadeInRight">
+                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-16 border-b border-white/10 pb-4">Corporate Fact Sheet</h4>
+                <div class="space-y-10">
+                    <div>
+                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Proprietor</div>
+                        <div class="text-2xl font-bold italic">Sanjay Kumar</div>
+                    </div>
+                    <div>
+                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Registration Status</div>
+                        <div class="text-xl font-bold italic text-blue-300">Since July 2017</div>
+                    </div>
+                    <div>
+                        <div class="text-white/40 text-[10px] font-black uppercase tracking-widest mb-2">Business Nature</div>
+                        <div class="text-xl font-bold">Wholesale / Distributor</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -95,75 +123,85 @@
 
 <section id="products" class="py-40 px-10 bg-slate-50">
     <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-24">
-            <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-4">Strategic Divisions</h2>
-            <h3 class="text-5xl font-black text-slate-900">Industrial Scale Portfolios.</h3>
+        <div class="flex justify-between items-end mb-24">
+            <div class="max-w-2xl">
+                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.5em] mb-6 underline decoration-blue-200 underline-offset-8">State Portfolio</h2>
+                <h3 class="text-5xl font-black text-slate-900 leading-tight">Architected Divisions.</h3>
+            </div>
+            <div class="hidden lg:block h-1 w-1/4 bg-blue-900/10 rounded-full mb-4"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="industrial-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700">
-                <div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?q=80&w=2070&auto=format&fit=crop');"></div>
+            <div class="enterprise-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700 border border-slate-100">
+                <div class="h-64 w-full bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?q=80&w=2070&auto=format&fit=crop');"></div>
                 <div class="p-12">
-                    <div class="text-5xl mb-8 group-hover:scale-110 transition duration-500 origin-left">📩</div>
+                    <div class="text-5xl mb-10 group-hover:animate-pulse">📩</div>
                     <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Paper Engineering</h4>
-                    <p class="text-slate-500 leading-relaxed text-sm mb-10 font-medium">
+                    <p class="text-slate-500 leading-relaxed mb-10 font-medium italic">
                         Managing the mass-scale distribution of Plain, Coloured, and Premium White Paper Envelopes. Architecting industrial-volume logistics for the entire state’s corporate and retail sectors.
                     </p>
-                    <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">High-Volume fulfillment</div>
+                    <div class="text-[11px] font-black uppercase tracking-[0.2em] text-blue-600 italic">Institutional Logistics Hub</div>
                 </div>
             </div>
 
-            <div class="industrial-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700 border-b-8 border-transparent hover:border-blue-600">
-                <div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop');"></div>
+            <div class="enterprise-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700 border border-slate-100">
+                <div class="h-64 w-full bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2071&auto=format&fit=crop');"></div>
                 <div class="p-12">
-                    <div class="text-5xl mb-8 group-hover:scale-110 transition duration-500 origin-left">🎨</div>
-                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Artisan Supply</h4>
-                    <p class="text-slate-500 leading-relaxed text-sm mb-10 font-medium">
-                        Authorized distribution hub for **Camel Acrylic Colors**, watercolors, and professional art sets. Stabilizing the creative supply chain across the Bihar retail landscape.
+                    <div class="text-5xl mb-10 group-hover:animate-pulse">🎨</div>
+                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight text-slate-900">Artisan Supply</h4>
+                    <p class="text-slate-500 leading-relaxed mb-10 font-medium italic">
+                        Authorized distribution of Camel Acrylic Colors, watercolors, and professional art sets. Stabilizing the supply chain for Bihar's retailers and creative hubs.
                     </p>
-                    <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">Statewide Brand Partner</div>
+                    <div class="text-[11px] font-black uppercase tracking-[0.2em] text-blue-600 italic text-blue-600">Official Brand Distribution</div>
                 </div>
             </div>
 
-            <div class="industrial-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700">
-                <div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=2048&auto=format&fit=crop');"></div>
+            <div class="enterprise-card group bg-white rounded-[4rem] overflow-hidden shadow-sm transition-all duration-700 border border-slate-100">
+                <div class="h-64 w-full bg-cover bg-center group-hover:scale-105 transition duration-700" style="background-image: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=2048&auto=format&fit=crop');"></div>
                 <div class="p-12">
-                    <div class="text-5xl mb-8 group-hover:scale-110 transition duration-500 origin-left">📦</div>
-                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Industrial Fulfillment</h4>
-                    <p class="text-slate-500 leading-relaxed text-sm mb-10 font-medium">
-                        Complete institutional stationery packs and high-grade paper product optimization. Providing guaranteed statewide delivery timelines for corporate frameworks.
+                    <div class="text-5xl mb-10 group-hover:animate-pulse">📦</div>
+                    <h4 class="text-3xl font-black mb-6 text-slate-900 leading-tight">Direct Fulfillment</h4>
+                    <p class="text-slate-500 leading-relaxed mb-10 font-medium italic">
+                        Complete institutional stationery packs and high-grade paper product optimization. Built for direct, high-capacity retail responsive supply chains.
                     </p>
-                    <div class="text-[10px] font-black uppercase tracking-widest text-blue-600 italic">Direct Fulfillment Ecosystem</div>
+                    <div class="text-[11px] font-black uppercase tracking-[0.2em] text-blue-600 italic">State-Wide Hub Access</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer id="contact" class="bg-slate-950 text-white pt-40 pb-20 px-10 relative overflow-hidden">
+<footer id="contact" class="bg-slate-950 text-white pt-40 pb-20 px-10 border-t-8 border-blue-600 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-[30rem] h-[30rem] bg-blue-600/10 blur-[150px] rounded-full"></div>
     <div class="max-w-7xl mx-auto relative z-10">
-        <div class="grid lg:grid-cols-2 gap-32 mb-40">
+        <div class="grid lg:grid-cols-2 gap-32 mb-40 items-center">
             <div>
-                <h2 class="text-7xl font-black tracking-tighter mb-10 leading-[0.9]">Scale Your <br> <span class="text-blue-500 italic">Distribution</span> Hub.</h2>
-                <div class="flex flex-col gap-6 text-xl">
-                    <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="hover:text-blue-400 transition italic underline underline-offset-8">info.deeshaenterprises.patna@gmail.com</a>
-                    <span class="font-bold">+91 9835198503</span>
+                <h2 class="text-7xl font-black tracking-tighter mb-12 leading-[0.9]">Connect <br> With The <span class="text-blue-500 italic">State Hub</span>.</h2>
+                <div class="flex flex-col gap-8">
+                    <a href="mailto:info.deeshaenterprises.patna@gmail.com" class="text-2xl font-bold hover:text-blue-400 transition flex items-center gap-4 group">
+                        <span class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition">✉</span>
+                        info.deeshaenterprises.patna@gmail.com
+                    </a>
+                    <div class="text-2xl font-bold flex items-center gap-4 italic text-blue-400">
+                        <span class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">☏</span>
+                        +91 9835198503
+                    </div>
                 </div>
             </div>
             
-            <div class="p-12 border border-white/10 rounded-[3rem] bg-white/5 backdrop-blur-md">
-                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 italic">Headquarters | Bihar</h4>
-                <p class="text-3xl font-light mb-12 leading-snug">Near Rajiv Nagar Nala Main Road, <br> Patna, Bihar – 800024</p>
-                <div class="pt-10 border-t border-white/10 flex items-center justify-between">
-                    <span class="text-[10px] font-bold tracking-widest opacity-60 uppercase">GST 10AOXPK3126N1ZO</span>
-                    <span class="text-[10px] font-black px-4 py-1 bg-blue-600 rounded-full italic uppercase">Active Regional Hub</span>
+            <div class="p-12 border border-white/10 rounded-[4rem] bg-white/5 backdrop-blur-md">
+                <h4 class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 underline underline-offset-8 decoration-blue-500">Regional Headquarters</h4>
+                <p class="text-4xl font-light mb-12 leading-snug">Near Rajiv Nagar Nala Main Road, <br> Patna, Bihar – 800024</p>
+                <div class="flex flex-wrap items-center justify-between">
+                    <span class="text-xs font-bold tracking-widest text-slate-400">GST: 10AOXPK3126N1ZO</span>
+                    <span class="px-6 py-2 bg-blue-600 rounded-full text-[10px] font-black uppercase tracking-widest italic animate-pulse">State-Wide Active Hub</span>
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-white/5 opacity-30 text-[10px] font-black tracking-[0.5em] uppercase italic">
+        <div class="flex flex-col md:flex-row justify-between items-center pt-20 border-t border-white/10 opacity-30 text-[10px] font-black tracking-[0.5em] uppercase italic">
             <p>© 2026 DEESHA ENTERPRISES</p>
-            <p>Logistics & Fulfillment Division</p>
+            <p class="mt-4 md:mt-0 italic underline underline-offset-8 decoration-blue-500">Logistics & Fulfillment Division</p>
         </div>
     </div>
 </footer>
